@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Todo List</title>
+<link rel="stylesheet" href="css/styles.css">
+    </head>
+<body>
+    <h1 class="wel">Welcome Peeps! Add Your TODO List</h1>
+    <div class="box" id="heading">
+        <h1><%= kd %></h1>
+    </div>
+<div class="box">
+    <% for(var i=0;i<nli.length;i++){ %>
+        <div class="item">
+            <input type="checkbox">
+                 <p><%=nli[i]%></p>
+        </div>
+        
+        
+       <%  } %>  
+
+       <form action="/" method="POST" class="item">
+        <input type="text" name="newitem" placeholder="New Item" autocomplete="off">
+        <button type="submit" name="button">+</button>
+        
+        
+            </form>
+</div>
+</body> 
+    </html>
+  
